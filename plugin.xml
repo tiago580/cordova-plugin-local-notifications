@@ -49,8 +49,8 @@
     </engines>
 
     <!-- dependencies -->
-    <dependency id="cordova-plugin-device" />
-    <dependency id="cordova-plugin-badge" version=">=0.8.5" />
+    <dependency id="cordova-plugin-device" version="2.1.0" />
+    <dependency id="cordova-plugin-badge" version=">=0.8.9" />
 
     <!-- js -->
     <js-module src="www/local-notification.js" name="LocalNotification">
@@ -92,7 +92,7 @@
     <platform name="android">
         <preference name="ANDROID_SUPPORT_V4_VERSION" default="31.+" />
         <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION" />
-        <framework src="src/android/build/localnotification.gradle" custom="true" type="gradleReference"/>
+        <framework src="src/android/build/build.gradle" custom="true" type="gradleReference"/>
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="LocalNotification">
